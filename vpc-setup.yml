@@ -1,0 +1,11 @@
+-hosts: localhost
+connection: local
+gather_facts: False
+tasks:
+  -name: Import VPC Variables
+    include_vars
+  
+  -name: Create vprofile VPC
+    ec2_vpc_net:
+    
+    
